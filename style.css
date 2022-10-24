@@ -1,3 +1,4 @@
+
 /* GENERAL */
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
@@ -194,15 +195,21 @@ li {
 
 .wave {
   display: inline-block;
-  animation: animate_wave 800ms infinite ease-in-out;
+  animation: animate_wave 1000ms linear infinite;
 }
 
 @keyframes animate_wave {
   0% {
     transform: rotate(0);
   }
-  50% {
+  25% {
     transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(-15deg);
   }
   100% {
     transform: rotate(0);
